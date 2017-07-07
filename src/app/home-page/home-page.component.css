@@ -1,0 +1,33 @@
+.profile-img{
+    max-width: 100px;
+}
+
+.section-title-text{
+    text-align: left;
+    font-size: 37px;
+}
+
+.main-content{
+    position: relative;
+    top:50px;
+}
+
+.section-title{
+    margin: auto;
+}
+
+.section-content{
+    margin-top: 25px;
+}
+
+.spacer {
+    margin-top: 20px; /* define margin as you see fit */
+}
+
+/*img{
+    border: 3px solid green;
+}*/
+
+/*.row{
+    border: 3px solid red;
+}*/
