@@ -1,0 +1,26 @@
+/*TODO : 
+1.make the caption responsively
+*/
+.roll-button {
+	background-color: #d65050;
+	border: 1px solid #d65050;
+	color: white;
+	display: inline-block;
+	font-family: "Raleway", sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+    font-weight: 700;
+	padding: 12px 35px;
+	text-transform: uppercase;
+	margin: auto;
+	vertical-align: middle;
+	position: absolute;
+	left:50%;
+	transform: translateX(-50%);
+	bottom: 10%;
+}
+
+.roll-button:hover {
+	color: #d65050;
+	background-color: transparent;
+}
