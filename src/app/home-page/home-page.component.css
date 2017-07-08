@@ -21,7 +21,12 @@
 }
 
 .spacer {
-    margin-top: 20px; /* define margin as you see fit */
+    margin-top: 20px;
+}
+
+.section-tail-img{
+    width: 60%;
+    padding: 10px;
 }
 
 /*img{

@@ -17,7 +17,15 @@ export class CarouselComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    //set carousel interval to 4s
     $('.carousel').carousel({interval: 4000});
+    //bind onClick event to the button with the animation (add duration)
+    $('#toMainContent').click(function(){
+      $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+      }, 1000);
+      return false;
+    });
   }
 
 }
