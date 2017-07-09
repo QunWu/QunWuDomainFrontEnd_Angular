@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-declare var $:any;
 
 @Component({
   selector: 'app-home-page',
@@ -12,7 +11,6 @@ export class HomePageComponent implements OnInit {
   }
 
   ngOnInit() {
-    $('.carousel').carousel({interval: 4000});
   }
 
 }

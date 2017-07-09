@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Renderer2, ElementRef } from '@angular/core';
-import { CarouselItemPojo } from "app/shared/carousel/CarouselItemPojo";
+import { CarouselItemPojo } from "app/shared/entity/CarouselItemPojo";
 
 @Component({
   selector: 'app-carousel-item',

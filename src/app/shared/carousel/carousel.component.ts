@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { CarouselItemPojo } from "app/shared/carousel/CarouselItemPojo";
-declare var $:any;
+import { CarouselItemPojo } from "app/shared/entity/CarouselItemPojo";
+declare var $: any;
 
 @Component({
   selector: 'app-carousel',

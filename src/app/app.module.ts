@@ -12,6 +12,10 @@ import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { NavigationHeaderComponent } from './shared/navigation-header/navigation-header.component';
 import { CarouselComponent } from './shared/carousel/carousel.component';
 import { CarouselItemComponent } from './shared/Carousel/carousel-item/carousel-item.component';
+import { CalenderComponent } from "./shared/calender/calender.component";
+import { PageRootComponent } from './shared/page-root/page-root.component';
+import { MainContentComponent } from './home-page/main-content/main-content.component';
+import { ContentSectionWithImgComponent } from './home-page/main-content/content-section-with-img/content-section-with-img.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import { CarouselItemComponent } from './shared/Carousel/carousel-item/carousel-
     ProfilePageComponent,
     NavigationHeaderComponent,
     CarouselComponent,
-    CarouselItemComponent
+    CarouselItemComponent,
+    CalenderComponent,
+    PageRootComponent,
+    MainContentComponent,
+    ContentSectionWithImgComponent,
   ],
   imports: [
     BrowserModule,

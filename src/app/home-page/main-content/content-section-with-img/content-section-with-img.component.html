@@ -1,0 +1,17 @@
+<div class="row small-spacer-20">
+    <div class="col-md-6 section-title"><span class="section-title-text">{{contentSection.title}}</span></div>
+</div>
+
+<div class="row section-content">
+  <div class="col-md-12">
+    <p *ngFor="let aParagraph of contentSection.content">{{aParagraph}}</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-4"></div>
+    <div class="col-md-6">
+      <img class="section-tail-img" [src]="contentSection.imgSrc">
+    </div>
+  <div class="col-md-2"></div>
+</div>
