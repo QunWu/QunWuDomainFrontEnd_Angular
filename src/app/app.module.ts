@@ -16,6 +16,7 @@ import { CalenderComponent } from "./shared/calender/calender.component";
 import { PageRootComponent } from './shared/page-root/page-root.component';
 import { MainContentComponent } from './home-page/main-content/main-content.component';
 import { ContentSectionWithImgComponent } from './home-page/main-content/content-section-with-img/content-section-with-img.component';
+import { ActiveDayDirectiveDirective } from './shared/calender/active-day-directive.directive';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { ContentSectionWithImgComponent } from './home-page/main-content/content
     PageRootComponent,
     MainContentComponent,
     ContentSectionWithImgComponent,
+    ActiveDayDirectiveDirective,
   ],
   imports: [
     BrowserModule,

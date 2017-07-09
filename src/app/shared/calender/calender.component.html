@@ -15,7 +15,7 @@
   </div>
 
 <ul class="days box-border">  
-  <li *ngFor="let aDay of daysForMonth">{{aDay}}</li>
+  <li *ngFor="let aDay of daysForMonth"><span appActiveDayDirective [dataInfo]="{'selectedMonth':selectedMonth,'selectedYear':selectedYear,'innerText':aDay,'currMonth':currMonth,'currYear':currYear, 'currDay':currDay}">{{aDay}}</span></li>
 </ul>
 </div>
 </div>

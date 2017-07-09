@@ -5,8 +5,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './calender.component.html',
   styleUrls: ['./calender.component.css']
 })
-export class CalenderComponent implements OnInit {
-  months :String[]= ["","January","February","March","April","May","June","July","Augest","September","October","November","December"]
+export class CalenderComponent implements OnInit{
+  months: String[] = ["", "January", "February", "March", "April", "May", "June", "July", "Augest", "September", "October", "November", "December"]
   daysForMonths:number[] = [31,-1,31,30,31,30,31,31,30,31,30,31];
   weekdays:String[] = ["Su","Mo","Tu","We","Th","Fr","Sa"];
   monthsInYear = 12;//count from 0
@@ -19,6 +19,7 @@ export class CalenderComponent implements OnInit {
   increaseMonths : number = 0;
   currYear:number = 0;
   currMonth:number = 0;
+  currDay : number = 0;
   selectedYear : number = 2017;
   selectedMonth : number = 0;
 
@@ -33,6 +34,8 @@ export class CalenderComponent implements OnInit {
     //in Data(), Aguest = 7
     this.currMonth = currData.getMonth()+1;
     this.currYear = currData.getFullYear();
+    this.currDay = currData.getDate();
+
     this.selectedYear = this.currYear;
     this.selectedMonth = this.currMonth;
 
