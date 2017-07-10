@@ -1,15 +1,25 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ViewChild, ElementRef, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-navigation-header',
   templateUrl: './navigation-header.component.html',
   styleUrls: ['./navigation-header.component.css']
 })
-export class NavigationHeaderComponent implements OnInit {
+export class NavigationHeaderComponent {
+  @ViewChild("navbar") navbar :ElementRef;
 
-  constructor() { }
+  isNavBarResponsive : boolean= false;
+  constructor(private renderer:Renderer2) { }
 
   ngOnInit() {
   }
 
+  clickBurgerNav(){
+    if(this.isNavBarResponsive){
+      this.renderer.addClass(this.navbar.nativeElement,"responsive");
+    }else{
+      this.renderer.removeClass(this.navbar.nativeElement,"responsive");
+    }
+    this.isNavBarResponsive = !this.isNavBarResponsive;
+  }
 }

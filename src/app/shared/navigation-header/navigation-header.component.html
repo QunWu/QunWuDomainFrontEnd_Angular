@@ -1,14 +1,18 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default header">
   <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">WebSiteName</a>
+    <div class="row">
+      <div class="navbar-header col-md-4">
+        <p><a href="#" class="header-title">Aaron's Domain</a></p>
+        <p class="header-desciption">Software Engineer II at eBay Inc.</p>
+      </div>
+      <div class="col-md-4"></div>
+      <ul class="nav navbar-nav row col-md-4" #navbar>
+        <li class="col-md-3"><a href="#home">Home</a></li>
+        <li class="col-md-3"><a href="#news">News</a></li>
+        <li class="col-md-3"><a href="#contact">Contact</a></li>
+        <li class="col-md-3"><a href="#about">About</a></li>
+        <li style="font-size:15px;" class="icon col-md-12" (click)="clickBurgerNav()"><a href="javascript:void(0);">&#9776;</a></li>
+      </ul>
     </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Page 1</a></li>
-      <li><a href="#">Page 2</a></li>
-      <li><a href="#">Page 3</a></li>
-    </ul>
   </div>
 </nav>
-              
