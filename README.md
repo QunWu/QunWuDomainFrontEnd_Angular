@@ -26,5 +26,8 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Bug:
+1. burger nar bar: go to localhost:4300, shrink the window in order to show the burger nav bar, click profile--> the home button is missing and js does not work correctly
 =======
 # QunWuDomainFrontEnd_Angular
