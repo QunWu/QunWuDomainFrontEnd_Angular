@@ -1,0 +1,67 @@
+.home-page-main-content-wrapper{
+    width: 100%;
+    margin: auto;
+}
+
+.home-page-search-form{
+    opacity:0.7;
+}
+
+.home-page-search-form:hover{
+    opacity:1;
+}
+
+.centralize{
+    margin: auto;
+    text-align: center;
+}
+
+.home-page-container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(http://www.planwallpaper.com/static/images/Fall-Nature-Background-Pictures.jpg);
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.row{
+    width: 100%;
+}
+
+.vertically-center{
+    margin-top: 50vh;
+    transform: translateY(-50%);
+}
+
+.title{
+    font-family:Georgia;
+    font-size: 60px;
+    color: white;
+    line-height: 1.1;
+    padding-bottom: 10px;
+    opacity: 0.9;
+}
+
+.roll-button{
+	background-color: transparent;
+	border: 1px solid #d65050;
+    color: white;
+	background-color: #d65050;
+	display: inline-block;
+	font-family: "Raleway", sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+    font-weight: 700;
+	padding: 12px 35px;
+	text-transform: uppercase;
+    opacity: 0.7;
+}
+
+.roll-button:hover {
+    opacity: 1;
+}
+
+.small-spacer-20 {
+    margin-top: 20px;
+}

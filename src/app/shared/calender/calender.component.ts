@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DateUtils } from "app/shared/util/date-utils";
 
 @Component({
   selector: 'app-calender',
@@ -6,15 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./calender.component.css']
 })
 export class CalenderComponent implements OnInit{
-  months: String[] = ["", "January", "February", "March", "April", "May", "June", "July", "Augest", "September", "October", "November", "December"]
-  daysForMonths:number[] = [31,-1,31,30,31,30,31,31,30,31,30,31];
-  weekdays:String[] = ["Su","Mo","Tu","We","Th","Fr","Sa"];
-  monthsInYear = 12;//count from 0
-
-  currH : String = "0";
-  currM : String = "0";
-  currS : String = "0";
-
+  months: String[] = DateUtils.months;
   /** for calender title*/
   increaseMonths : number = 0;
   currYear:number = 0;
@@ -70,14 +63,14 @@ export class CalenderComponent implements OnInit{
   }
 
   updateSelectedMonthAndYear(increasedMonths:number){
-    var increasedYear:number = (increasedMonths/this.monthsInYear)|0;
-    increasedMonths = increasedMonths%this.monthsInYear;
+    var increasedYear:number = (increasedMonths/DateUtils.monthsInYear)|0;
+    increasedMonths = increasedMonths%DateUtils.monthsInYear;
     
     if(this.currMonth+increasedMonths<=0){
-      this.selectedMonth = this.currMonth+increasedMonths+this.monthsInYear;
+      this.selectedMonth = this.currMonth+increasedMonths+DateUtils.monthsInYear;
       increasedYear--;
-    }else if( this.currMonth+increasedMonths > this.monthsInYear){
-      this.selectedMonth = this.currMonth+increasedMonths-this.monthsInYear;
+    }else if( this.currMonth+increasedMonths > DateUtils.monthsInYear){
+      this.selectedMonth = this.currMonth+increasedMonths-DateUtils.monthsInYear;
       increasedYear++;
     }else{
       this.selectedMonth = this.currMonth+increasedMonths;
@@ -99,7 +92,7 @@ export class CalenderComponent implements OnInit{
  */
   getDaysForParticularMonth(realMonth:number, year:number){
     if(realMonth!==2)
-      return this.daysForMonths[realMonth-1];
+      return DateUtils.daysForMonths[realMonth-1];
     else{
       if(year%4===0){
         if(year%100 !== 0)
@@ -111,21 +104,6 @@ export class CalenderComponent implements OnInit{
       }else
         return 28; 
     }
-  }
-  //trigger : <body onload="startTime()">
-  //reference: http://www.w3school.com.cn/js/js_obj_date.asp
-  startTime(){
-    var currDate=new Date()
-    // add a zero in front of numbers<10
-    this.currH=this.checkTime(currDate.getHours());
-    this.currM=this.checkTime(currDate.getMinutes());
-    this.currS=this.checkTime(currDate.getSeconds());
-    // document.getElementById('txt').innerHTML=h+":"+m+":"+s
-    return setTimeout('startTime()',1000);
-  }
-
-  checkTime(i){
-    if (i<10) {i="0" + i} return i
   }
 
 }

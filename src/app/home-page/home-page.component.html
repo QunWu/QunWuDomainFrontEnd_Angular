@@ -1,11 +1,25 @@
-<!--header-->
-<app-navigation-header></app-navigation-header>
-<!--welcome carousel slide -->
-<app-carousel></app-carousel>
-<!--Main Content-->
-<app-main-content></app-main-content>
-<!--Calender-->
-<div class="large-spacer-100"></div>
-<app-calender></app-calender>
-<!--Root-->
-<app-page-root></app-page-root>
+<!--<app-navigation-header></app-navigation-header>-->
+<div class="container home-page-container">
+    <div class="row home-page-main-content-wrapper vertically-center">
+        <div class="row centralize"><span class="title">Aaron Wu' Domain</span></div>
+
+        <div class="row centralize small-spacer-20">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6 home-page-search-form">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn"><button class="btn btn-default" type="button">Go!</button></span>
+                </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+            <div class="col-lg-3"></div>
+        </div>
+
+        <div class="row centralize small-spacer-20">
+            <app-clock></app-clock>
+        </div>
+
+        <div class="row centralize small-spacer-20">
+            <a href="#" class="roll-button">Go To Profile</a>
+        </div>
+    </div>
+</div>
