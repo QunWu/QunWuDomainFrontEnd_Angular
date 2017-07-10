@@ -1,4 +1,8 @@
 .page-root-wrapper{
+    width: 100%;
     padding: 20px;
     background-color: black;
+}
+.page-root-text{
+    color: #666;
 }

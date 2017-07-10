@@ -2,15 +2,15 @@
   <div class="container-fluid">
     <div class="row">
       <div class="navbar-header col-md-4">
-        <p><a href="#" class="header-title">Aaron's Domain</a></p>
+        <p><a routerLink="/" class="header-title">Aaron's Domain</a></p>
         <p class="header-desciption">Software Engineer II at eBay Inc.</p>
       </div>
       <div class="col-md-4"></div>
       <ul class="nav navbar-nav row col-md-4" #navbar>
-        <li class="col-md-3"><a href="#home">Home</a></li>
-        <li class="col-md-3"><a href="#news">News</a></li>
-        <li class="col-md-3"><a href="#contact">Contact</a></li>
-        <li class="col-md-3"><a href="#about">About</a></li>
+        <li class="col-md-3" ><a routerLink="/">Home</a></li>
+        <li class="col-md-3" ><a routerLink="/profile">Profile</a></li>
+        <li class="col-md-3" ><a routerLink="/post">Post</a></li>
+        <li class="col-md-3" ><a routerLink="/contact">contact</a></li>
         <li style="font-size:15px;" class="icon col-md-12" (click)="clickBurgerNav()"><a href="javascript:void(0);">&#9776;</a></li>
       </ul>
     </div>

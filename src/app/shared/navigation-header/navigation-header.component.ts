@@ -11,9 +11,6 @@ export class NavigationHeaderComponent {
   isNavBarResponsive : boolean= false;
   constructor(private renderer:Renderer2) { }
 
-  ngOnInit() {
-  }
-
   clickBurgerNav(){
     if(this.isNavBarResponsive){
       this.renderer.addClass(this.navbar.nativeElement,"responsive");

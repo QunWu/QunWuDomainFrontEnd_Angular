@@ -2,6 +2,7 @@
     width: 100%;
     background-color: transparent;
     position: fixed;
+    z-index: 1;
 }
 .header-title{
     color: white;

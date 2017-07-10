@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { Routes, RouterModule} from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
@@ -19,6 +20,12 @@ import { ContentSectionWithImgComponent } from './home-page/main-content/content
 import { ActiveDayDirectiveDirective } from './shared/calender/active-day-directive.directive';
 import { ClockComponent } from './shared/clock/clock.component';
 
+const appRoutes : Routes = [
+  {path : '', component : HomePageComponent},
+  {path : 'profile',component : ProfilePageComponent},
+  {path : 'contact', component : ContactPageComponent},
+  {path : 'post', component: PostPageComponent}
+];
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +47,8 @@ import { ClockComponent } from './shared/clock/clock.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
