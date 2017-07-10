@@ -42,7 +42,7 @@
   display: none;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
   .nav li {display: none;}
   .nav li.icon {
     display: block;
@@ -50,7 +50,7 @@
   .header{ background-color: black;}
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
   .nav.responsive {position: relative;}
   .nav.responsive .icon {
     position: absolute;
