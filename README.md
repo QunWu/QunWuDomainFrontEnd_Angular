@@ -29,5 +29,16 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Bug:
 1. burger nar bar: go to localhost:4300, shrink the window in order to show the burger nav bar, click profile--> the home button is missing and js does not work correctly
+
+## Original Script in package.json
+"ng": "ng",
+"start": "ng serve",
+"build": "ng build",
+"test": "ng test",
+"lint": "ng lint",
+"e2e": "ng e2e"
+
+## Deploy Angular CLI in Heroku
+reference : https://www.angularonrails.com/deploy-angular-cli-webpack-project-heroku/
 =======
 # QunWuDomainFrontEnd_Angular

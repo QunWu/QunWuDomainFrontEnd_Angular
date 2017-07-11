@@ -9,18 +9,21 @@ declare var $: any;
 export class NavigationHeaderComponent implements OnInit{
   @ViewChild("navbar") navbar: ElementRef;
 
+  halfScreenHeight : number = 0;
   isNavBarResponsive : boolean= true;
+
   constructor(private renderer:Renderer2) { }
+
   ngOnInit(): void {
-    // console.log($(window).height());
+    this.halfScreenHeight = $(window).height()/2;
     $(window).scroll(function (event) {
-      // var scroll = $(window).scrollTop();
-      if($(window).scrollTop()>=$(window).height()/2){
+      if($(window).scrollTop()>=this.halfScreenHeight){
         $("#header").css({backgroundColor: 'black',opacity:0.8});
       }else
         $("#header").css({backgroundColor:'transparent',opacity:1});
-    });
+    }.bind(this));
   }
+
   clickBurgerNav(){
     if(this.isNavBarResponsive){
       this.renderer.addClass(this.navbar.nativeElement,"responsive");
