@@ -1,11 +1,15 @@
+.container{
+	width:100%; 
+	margin: 0; 
+	padding: 0;
+}
 /*TODO : 
 1.make the caption responsively
 */
-.roll-button {
+/*.roll-button {
 	background-color: #d65050;
 	border: 1px solid #d65050;
 	color: white;
-	display: inline-block;
 	font-family: "Raleway", sans-serif;
 	font-size: 13px;
 	line-height: 24px;
@@ -23,4 +27,4 @@
 .roll-button:hover {
 	color: #d65050;
 	background-color: transparent;
-}
+}*/

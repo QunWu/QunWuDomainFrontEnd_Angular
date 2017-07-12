@@ -8,6 +8,7 @@ import { DateUtils } from "app/shared/util/date-utils";
 })
 export class CalenderComponent implements OnInit{
   months: String[] = DateUtils.months;
+  weekdays : String[] = DateUtils.weekdays;
   /** for calender title*/
   increaseMonths : number = 0;
   currYear:number = 0;

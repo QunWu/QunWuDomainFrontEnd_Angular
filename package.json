@@ -7,14 +7,12 @@
     "npm": "4.2.0"
   },
   "scripts": {
-    "start": "node server.js",
-    "lint": "tslint \"src/**/*.ts\"",
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
     "test": "ng test",
-    "pree2e": "webdriver-manager update",
-    "e2e": "protractor",
-    "preinstall": "npm install -g http-server",
-    "postinstall": "ng build --aot -prod",
-    "build": "ng build"
+    "lint": "ng lint",
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {

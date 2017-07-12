@@ -13,6 +13,7 @@ export class ClockComponent {
   currWeekDay : number = 0;
 
   constructor() { 
+    this.startTime();
     setInterval(this.startTime.bind(this),1000); 
   }
 

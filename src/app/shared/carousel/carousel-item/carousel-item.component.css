@@ -1,3 +1,26 @@
 .above-mid-caption{
     margin-bottom: 20%
 }
+
+.small-spacer-20 {
+    margin-top: 20px;
+}
+
+.roll-button {
+	background-color: #d65050;
+	border: 1px solid #d65050;
+	color: white;
+	font-family: "Raleway", sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+    font-weight: 700;
+	padding: 12px 35px;
+	text-transform: uppercase;
+    margin-top: 200px;
+    top: 200px;
+}
+
+.roll-button:hover {
+	color: #d65050;
+	background-color: transparent;
+}

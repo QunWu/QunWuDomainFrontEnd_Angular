@@ -9,15 +9,14 @@ declare var $: any;
 })
 export class CarouselComponent implements OnInit {
   carouselItems: CarouselItemPojo[] = [
-    new CarouselItemPojo("https://pbs.twimg.com/media/DD0zjheVwAUNZCk.jpg","Welcome to Aaron's Domain","Feel free to look around"),
-    new CarouselItemPojo("https://pbs.twimg.com/media/DD0zjheVwAUNZCk.jpg","Need a software programmer?","Do not hesitate to view my profile"),
-    new CarouselItemPojo("https://pbs.twimg.com/media/DD0zjheVwAUNZCk.jpg","Tech and life balance","Share my happiness with all you guys")
+    new CarouselItemPojo("https://pbs.twimg.com/media/DD0zjheVwAUNZCk.jpg","Need a software programmer","Do not hesitate to view my profile"),
+    new CarouselItemPojo("assets/img/2.jpg","Welcome to Aaron's Domain","Feel free to look around")
   ];
 
   constructor() { }
 
   ngOnInit() {
-    //set carousel interval to 4s
+    //set carousel interval to 3.5s
     $('.carousel').carousel({interval: 4000});
     //bind onClick event to the button with the animation (add duration)
     $('#toMainContent').click(function(){
