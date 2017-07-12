@@ -1,9 +1,5 @@
-.above-mid-caption{
-    margin-bottom: 20%
-}
-
-.small-spacer-20 {
-    margin-top: 20px;
+.small-spacer-40 {
+    margin-top: 40px;
 }
 
 .roll-button {
@@ -16,11 +12,15 @@
     font-weight: 700;
 	padding: 12px 35px;
 	text-transform: uppercase;
-    margin-top: 200px;
-    top: 200px;
 }
 
 .roll-button:hover {
 	color: #d65050;
 	background-color: transparent;
+}
+
+.above-mid-caption{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
