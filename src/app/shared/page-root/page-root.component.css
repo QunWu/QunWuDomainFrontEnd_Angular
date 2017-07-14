@@ -6,3 +6,8 @@
 .page-root-text{
     color: #666;
 }
+
+.footer{
+   position:fixed;
+   bottom:0px;
+}
