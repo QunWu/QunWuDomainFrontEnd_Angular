@@ -5,10 +5,12 @@
         <div class="row centralize small-spacer-20">
             <div class="col-lg-3"></div>
             <div class="col-lg-6 home-page-search-form">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search for...">
-                    <span class="input-group-btn"><button class="btn btn-default" type="button">Go!</button></span>
-                </div><!-- /input-group -->
+                <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+                    <div class="input-group">
+                        <input required type="text" class="form-control" placeholder="Search for..." formControlName="email">
+                        <span class="input-group-btn"><button class="btn btn-default" type="button">Go!</button></span>
+                    </div><!-- /input-group -->
+                </form>
             </div><!-- /.col-lg-6 -->
             <div class="col-lg-3"></div>
         </div>
@@ -18,7 +20,7 @@
         </div>
 
         <div class="row centralize small-spacer-20">
-            <a href="#" class="roll-button">Go To Profile</a>
+            <a href="profile" class="roll-button">Go To Profile</a>
         </div>
     </div>
 </div>

@@ -1,3 +1,39 @@
-<p>
-  contact-page works!
-</p>
+<div class="container">
+    <div class="row header-image"></div>  
+    <div class="row contact-form">
+        <div class="col-md-6">
+            <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=5791%20PONCE%20CT&key=AIzaSyDDvWXfZ2UwwbBr5Ga1yyaveMwtnDBa_d8" allowfullscreen></iframe>
+        </div>
+        <div class="col-md-6">
+            <div>
+                <h3>Contact Me</h3>
+                <div>
+                    <p>Primary Email Address: Aaron.wu.work@gmail.com</p>
+                </div>
+                <div>
+                    <p> Address: 243 North Temple Dr, Milpitas, CA</p>
+                </div>
+            </div>
+            <form [formGroup]="f"  (ngSubmit)="onSubmit()"> 
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" required class="form-control" formControlName="email" placeholder="your email">
+                    <span *ngIf="f.get('email').invalid&&f.get('email').touched">email is wrong</span> 
+                </div>  
+                 <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" required class="form-control" formControlName="subject" placeholder="subject of the email">
+                    <span *ngIf="f.get('subject').invalid&&f.get('subject').touched">Subject is wrong</span> 
+                </div> 
+                 <div class="form-group">
+                    <label for="content">Content:</label>
+                    <textarea required class="form-control" rows="5" formControlName="content" placeholder="what you want to say"></textarea>
+                    <span *ngIf="f.get('content').invalid&&f.get('content').touched">Content is wrong</span> 
+                </div> 
+                 <button type="submit" class="btn btn-default" [disabled]="f.invalid">Submit</button>
+            </form> 
+        </div>
+    </div> 
+</div>
+<div class="medium-spacer-40"></div> 
+<app-page-root></app-page-root>
