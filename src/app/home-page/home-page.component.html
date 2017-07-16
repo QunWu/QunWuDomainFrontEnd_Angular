@@ -7,8 +7,8 @@
             <div class="col-lg-6 home-page-search-form">
                 <form (ngSubmit)="onSubmit(f)" #f="ngForm">
                     <div class="input-group">
-                        <input required type="text" class="form-control" placeholder="Search for..." formControlName="email">
-                        <span class="input-group-btn"><button class="btn btn-default" type="button">Go!</button></span>
+                        <input required type="text" id="search" name="search" class="form-control" placeholder="Search for post..." ngModel>
+                        <span class="input-group-btn"><button class="btn btn-default" type="button" [disabled]="!f.valid">Go!</button></span>
                     </div><!-- /input-group -->
                 </form>
             </div><!-- /.col-lg-6 -->

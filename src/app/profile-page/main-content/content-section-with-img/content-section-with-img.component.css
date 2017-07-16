@@ -1,0 +1,42 @@
+.subject-tail-img{
+    width: 300px;
+    height: 250px;
+    margin: auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.subject-title-text{
+    text-align: left;
+    font-size: 30px;
+}
+
+.subject-title{
+    margin: 0;
+}
+
+.subject-content{
+    margin: 0;
+    margin-top: 25px;
+}
+
+.section-title{
+    text-align: center;
+}
+
+.section-title-text{
+    text-align: center;
+    font-size: 37px;
+    text-decoration: underline;
+}
+
+.row{
+    width: 100%;
+    margin: 0;
+}
+
+img{
+    height: 100%;
+    width:100%;
+    margin: auto;
+}

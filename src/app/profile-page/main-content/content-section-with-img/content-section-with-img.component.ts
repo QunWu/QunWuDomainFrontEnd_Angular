@@ -7,7 +7,7 @@ import { SkillIntroSection } from "app/shared/entity/SkillIntroSection";
   styleUrls: ['./content-section-with-img.component.css']
 })
 export class ContentSectionWithImgComponent implements OnInit {
-  @Input() contentSection:SkillIntroSection= null;
+  @Input() skillIntroSection:SkillIntroSection= null;
   constructor() { }
 
   ngOnInit() {

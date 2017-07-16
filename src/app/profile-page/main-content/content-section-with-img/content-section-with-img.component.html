@@ -1,0 +1,29 @@
+<div class="row smaller-spacer-20 section-title"><span class="section-title-text">{{skillIntroSection.sectionTitle}}</span></div>
+<div class="row" *ngFor="let aSubject of skillIntroSection.subjects">
+  <div class="row smaller-spacer-20 subject-title" *ngIf="aSubject.subjectTitle !== undefined">
+    <div class="col-md-12 subject-title"><span class="subject-title-text">{{aSubject.subjectTitle}}</span></div>
+  </div>
+
+  <div class="row subject-content smaller-spacer-20">
+    <div class="row">
+      <div class="col-md-12">
+        <p *ngFor="let aParagraph of aSubject.paragraphs">{{aParagraph}}</p>
+      </div>
+    </div>
+
+    <div class="row" *ngIf="aSubject.unorderLists!== undefined && aSubject.unorderLists.length > 0">
+      <div *ngFor="let aList of aSubject.unorderLists" class="col-md-12 smaller-spacer-20">
+        <p>{{aList.listTitle}}</p>
+        <ul>
+          <li *ngFor="let aListContent of aList.listContents">{{aListContent}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="aSubject.imgSrc !== undefined" class="row subject-content">
+    <div class="col-md-12 subject-tail-img">
+      <img [src]="aSubject.imgSrc">
+    </div>
+  </div>
+</div>

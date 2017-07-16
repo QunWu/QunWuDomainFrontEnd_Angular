@@ -2,12 +2,8 @@
     width: 100%;
     padding: 20px;
     background-color: black;
+    bottom:0px;
 }
 .page-root-text{
     color: #666;
-}
-
-.footer{
-   position:fixed;
-   bottom:0px;
 }
