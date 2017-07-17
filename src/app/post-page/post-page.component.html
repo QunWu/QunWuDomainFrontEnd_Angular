@@ -1,3 +1,33 @@
-<p>
-  post-page works!
-</p>
+<div class="container">
+    <!--header background img-->
+    <div class="row header-image"></div>
+    <!--main body-->
+    <div class="row large-spacer-100">
+      <!-- post preview-->
+      <div class="col-md-9">
+        
+      </div>
+      <!-- right side bar-->
+      <div class="col-md-3">
+        <!--search bar-->
+        <div class="input-group input-group-lg">
+          <input type="text" class="form-control" placeholder="search..." aria-describedby="sizing-addon1">
+        </div>
+
+        <!--recent post-->
+        <div class="medium-spacer-40" *ngIf="recentPosts!==undefined && recentPosts.list.length > 0">
+          <app-blank-list-group [listGroup]="recentPosts"></app-blank-list-group>
+        </div>
+
+        <!--recent post-->
+         <div class="medium-spacer-40" *ngIf="recentComments!==undefined && recentComments.list.length > 0">
+          <app-blank-list-group [listGroup]="recentComments"></app-blank-list-group>
+        </div> 
+
+        <!--categories-->
+         <div class="medium-spacer-40" *ngIf="categories!==undefined && categories.list.length > 0">
+          <app-blank-list-group [listGroup]="categories"></app-blank-list-group>
+        </div> 
+      </div>
+    </div>
+</div>

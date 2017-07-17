@@ -19,6 +19,9 @@ import { MainContentComponent } from './profile-page/main-content/main-content.c
 import { ContentSectionWithImgComponent } from './profile-page/main-content/content-section-with-img/content-section-with-img.component';
 import { ActiveDayDirectiveDirective } from './shared/calender/active-day-directive.directive';
 import { ClockComponent } from './shared/clock/clock.component';
+import { BlankListGroupComponent } from './shared/customized-list-group/blank-list-group/blank-list-group.component';
+import { PostPreviewComponent } from './post-page/post-preview/post-preview.component';
+import { PostFullviewComponent } from './post-page/post-fullview/post-fullview.component';
 
 const appRoutes : Routes = [
   {path : '', component : HomePageComponent},
@@ -42,6 +45,9 @@ const appRoutes : Routes = [
     ContentSectionWithImgComponent,
     ActiveDayDirectiveDirective,
     ClockComponent,
+    BlankListGroupComponent,
+    PostPreviewComponent,
+    PostFullviewComponent,
   ],
   imports: [
     BrowserModule,

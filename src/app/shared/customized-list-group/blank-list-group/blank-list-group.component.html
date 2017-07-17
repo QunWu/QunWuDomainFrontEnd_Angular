@@ -1,0 +1,12 @@
+<div>
+  <div *ngIf="listGroup.groupName !== undefined">
+    <span class="group-name">{{listGroup.groupName}}</span>
+  </div>
+  <div *ngFor="let aList of listGroup.list" class="small-spacer-20">
+     <div *ngIf="aList.link === undefined;else aLink">{{aList.listName}}</div>
+    <ng-template #aLink>
+      <a target="_blank" [href]="aList.link">{{aList.listName}}</a>
+    </ng-template> 
+    <div *ngIf="aList.listDesc!==undefined">{{aList.listDesc}}</div>
+  </div>
+</div>
