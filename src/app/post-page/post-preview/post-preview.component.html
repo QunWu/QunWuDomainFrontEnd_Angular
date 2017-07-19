@@ -1,3 +1,15 @@
-<p>
-  post-preview works!
-</p>
+<div class="border center">
+  <h4 class="post-title">
+    <a [href]="postPreview.postLink">{{postPreview.postTitle}}</a>
+  </h4>
+
+  <div class="meta-post">
+    <span class="glyphicon glyphicon-calendar"></span><span class="meta-post-text">Posted on <a href="#">{{postPreview.postTime | date}}</a></span>
+    <span class="inline-spacer"></span>
+    <span class="glyphicon glyphicon-folder-close"></span><span class="meta-post-text">Posted in <a href="#">{{postPreview.leafCategories}}</a></span>
+  </div>
+
+  <div class="post-entry small-spacer-20">{{postPreview.postEntry}}</div>
+
+  <hr>
+</div>

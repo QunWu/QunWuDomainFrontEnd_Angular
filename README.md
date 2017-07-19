@@ -44,5 +44,12 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Deploy Angular CLI in Heroku
 Build command: ng build --prod --output-path /Users/qunwu/Documents/WebWorkspace/AngularJS_2/qunwudomain-fe/public
 reference : https://www.angularonrails.com/deploy-angular-cli-webpack-project-heroku/
+
+##Reference:
+https://stackoverflow.com/questions/43440422/what-is-the-alternative-for-ng-include-in-angular2
+https://stackoverflow.com/questions/38093727/angular2-insert-a-dynamic-component-as-child-of-a-container-in-the-dom/38095442#comment65757016_38095442
+https://stackoverflow.com/questions/38888008/how-can-i-use-create-dynamic-template-to-compile-dynamic-component-with-angular/38888009#38888009
+http://plnkr.co/edit/OjxKE9HWnDInKojuhhk8?p=preview
+https://netbasal.com/dynamically-creating-components-with-angular-a7346f4a982d
 =======
 # QunWuDomainFrontEnd_Angular

@@ -5,8 +5,10 @@
     <div class="row large-spacer-100">
       <!-- post preview-->
       <div class="col-md-9">
-        
+        <app-post-preview *ngFor="let aPreview of postPreviews" [postPreview] = "aPreview"></app-post-preview>
+        <div #dynamicArticle></div>
       </div>
+      
       <!-- right side bar-->
       <div class="col-md-3">
         <!--search bar-->
@@ -28,6 +30,7 @@
          <div class="medium-spacer-40" *ngIf="categories!==undefined && categories.list.length > 0">
           <app-blank-list-group [listGroup]="categories"></app-blank-list-group>
         </div> 
+
       </div>
     </div>
 </div>

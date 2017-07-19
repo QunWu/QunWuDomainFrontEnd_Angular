@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { PostPreview } from "app/shared/entity/PostPreview";
 
 @Component({
   selector: 'app-post-preview',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostPreviewComponent implements OnInit {
 
+  @Input() postPreview: PostPreview;
+  
   constructor() { }
 
   ngOnInit() {
+    console.log(this.postPreview);
   }
 
 }

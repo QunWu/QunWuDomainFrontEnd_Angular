@@ -1,0 +1,18 @@
+.border{
+    width: 90%;
+    color: #767676
+}
+
+.center {
+    margin: auto;
+    padding: 10px;
+}
+
+.inline-spacer{
+    margin-left: 10%;
+}
+
+.meta-post-text{
+    margin-left: 2px;
+    font-size: 13px;
+}
