@@ -1,6 +1,6 @@
 <div class="border center">
   <h4 class="post-title">
-    <a [href]="postPreview.postLink">{{postPreview.postTitle}}</a>
+    <a [href]="postPreview.postLink" (click)="onDisplayArticle(postPreview.postId)">{{postPreview.postTitle}}</a>
   </h4>
 
   <div class="meta-post">

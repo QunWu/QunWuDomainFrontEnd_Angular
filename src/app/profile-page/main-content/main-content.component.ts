@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SkillIntroSection, SkillSubject, UnorderList } from "app/shared/entity/SkillIntroSection";
+import { SkillIntroSection, SkillSubject, UnorderList } from "app/profile-page/SkillIntroSection";
 
 @Component({
   selector: 'app-main-content',

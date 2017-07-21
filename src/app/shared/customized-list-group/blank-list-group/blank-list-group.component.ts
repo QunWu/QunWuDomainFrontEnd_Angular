@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ListGroup } from "app/shared/entity/ListGroup";
+import { ListGroup } from "app/entity/ListGroup";
 
 @Component({
   selector: 'app-blank-list-group',

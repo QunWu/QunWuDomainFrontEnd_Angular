@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Renderer2, ElementRef } from '@angular/core';
-import { CarouselItemPojo } from "app/shared/entity/CarouselItemPojo";
+import { CarouselItemPojo } from "app/shared/carousel/CarouselItemPojo";
 declare var $: any;
 
 @Component({
@@ -18,9 +18,6 @@ export class CarouselItemComponent implements OnInit {
     }
     //bind onClick event to the button with the animation (add duration)
     $('a.roll-button').click(function(){
-      console.log($.attr(this, 'href'));
-       console.log($( $.attr(this, 'href') ) );
-       console.log($( $.attr(this, 'href') ).offset() );
       $('html, body').animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top
       }, 1000);

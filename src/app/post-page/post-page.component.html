@@ -5,8 +5,7 @@
     <div class="row large-spacer-100">
       <!-- post preview-->
       <div class="col-md-9">
-        <app-post-preview *ngFor="let aPreview of postPreviews" [postPreview] = "aPreview"></app-post-preview>
-        <div #dynamicArticle></div>
+        <router-outlet></router-outlet>
       </div>
       
       <!-- right side bar-->

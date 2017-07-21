@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { SkillIntroSection } from "app/shared/entity/SkillIntroSection";
+import { SkillIntroSection } from "app/profile-page/SkillIntroSection";
 
 @Component({
   selector: 'app-content-section-with-img',

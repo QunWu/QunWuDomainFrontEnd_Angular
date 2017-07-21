@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CarouselItemPojo } from "app/shared/entity/CarouselItemPojo";
+import { CarouselItemPojo } from "app/shared/carousel/CarouselItemPojo";
 declare var $: any;
 
 @Component({
