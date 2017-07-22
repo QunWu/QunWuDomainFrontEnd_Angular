@@ -32,7 +32,7 @@ export class PostService {
 
   private postPreviews: PostPreview[] = [
     new PostPreview(
-      "1",
+      "test",
       "六四，一个我认为的客观的陈述", 
       new Date(),
       ["Uncategorized"],
@@ -48,14 +48,7 @@ export class PostService {
   }
 
   getPostById(postId:String){
-    this.http.get("assets/test.html").subscribe(
-    // this.http.get("assets/"+postId+".html").subscribe(
-      (response) => {
-        var res = response.text();
-      },
-      (error) => error
-    );
-    return this.selectedPost;
+    return this.http.get("assets/"+postId+".html");
   }
 
   getRecentPost():ListGroup{

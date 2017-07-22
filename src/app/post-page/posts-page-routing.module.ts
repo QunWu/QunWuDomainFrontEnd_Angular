@@ -9,6 +9,7 @@ import { PostListComponent } from './post-list/post-list.component';
 const postsRoutes: Routes = [
   { path: '', component: PostPageComponent, children: [
     { path: '', component: PostListComponent },
+    { path: ':postId', component: PostFullviewComponent}
   ]},
 ];
 
