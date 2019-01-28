@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { CarouselComponent } from "app/shared/carousel/carousel.component";
-import { CarouselItemComponent } from "app/shared/Carousel/carousel-item/carousel-item.component";
+import { CarouselItemComponent } from "app/shared/carousel/carousel-item/carousel-item.component";
 import { CalenderComponent } from "app/shared/calender/calender.component";
 import { PageRootComponent } from "app/shared/page-root/page-root.component";
 import { ActiveDayDirectiveDirective } from "app/shared/calender/active-day-directive.directive";
