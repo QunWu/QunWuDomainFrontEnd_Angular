@@ -1,21 +1,23 @@
 <div class="container">
   <div class="row calender-container">
-  <div class="month box-border">      
-    <ul>
-      <li class="prev"> <a id="prev" name="prev" (click)="prev()" class="nav-button"> &#10094; </a></li>
-      <li class="next"> <a id="next" name="next" (click)="next()" class="nav-button"> &#10095; </a></li>
-      <li style="text-align:center">{{months[selectedMonth]}}<br><span style="font-size:18px">{{selectedYear}}</span></li>
+    <div class="month box-border">      
+      <ul>
+        <li class="prev"> <a id="prev" name="prev" (click)="prev()" class="nav-button"> &#10094; </a></li>
+        <li class="next"> <a id="next" name="next" (click)="next()" class="nav-button"> &#10095; </a></li>
+        <li style="text-align:center">{{months[selectedMonth]}}<br><span style="font-size:18px">{{selectedYear}}</span></li>
+      </ul>
+    </div>
+
+    <div>
+      <ul class="weekdays box-border">
+        <li *ngFor="let weekday of weekdays">{{weekday}}</li>
+      </ul>
+    </div>
+
+    <ul class="days box-border">
+      <li *ngFor="let aDay of daysForMonth">
+        <span appActiveDayDirective [dataInfo]="{'selectedMonth':selectedMonth,'selectedYear':selectedYear,'innerText':aDay,'currMonth':currMonth,'currYear':currYear, 'currDay':currDay}">{{aDay}}</span>
+      </li>
     </ul>
   </div>
-
-  <div>
-    <ul class="weekdays box-border">
-      <li *ngFor="let weekday of weekdays">{{weekday}}</li>
-    </ul>
-  </div>
-
-<ul class="days box-border">  
-  <li *ngFor="let aDay of daysForMonth"><span appActiveDayDirective [dataInfo]="{'selectedMonth':selectedMonth,'selectedYear':selectedYear,'innerText':aDay,'currMonth':currMonth,'currYear':currYear, 'currDay':currDay}">{{aDay}}</span></li>
-</ul>
-</div>
 </div>

@@ -51,5 +51,6 @@ https://stackoverflow.com/questions/38093727/angular2-insert-a-dynamic-component
 https://stackoverflow.com/questions/38888008/how-can-i-use-create-dynamic-template-to-compile-dynamic-component-with-angular/38888009#38888009
 http://plnkr.co/edit/OjxKE9HWnDInKojuhhk8?p=preview
 https://netbasal.com/dynamically-creating-components-with-angular-a7346f4a982d
+Webpack Issue when upgrade to Ang7: https://github.com/angular/angular-cli/issues/9680#issuecomment-413158834
 =======
 # QunWuDomainFrontEnd_Angular
