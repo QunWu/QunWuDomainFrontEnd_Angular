@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { PostPageComponent } from "./post-page.component";
-import { PostPreviewComponent } from './post-list/post-preview/post-preview.component';
 import { PostFullviewComponent } from './post-fullview/post-fullview.component';
 import { PostListComponent } from './post-list/post-list.component';
 
