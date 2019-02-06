@@ -3,7 +3,7 @@ import { Directive, HostBinding, Input, OnInit, OnChanges, SimpleChanges } from 
 @Directive({
   selector: '[appActiveDayDirective]'
 })
-export class ActiveDayDirectiveDirective implements OnInit,OnChanges {
+export class ActiveDayDirective implements OnInit,OnChanges {
   ngOnChanges(changes: SimpleChanges): void {
     this.isActive=false;
     this.updateActive();
