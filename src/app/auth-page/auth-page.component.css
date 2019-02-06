@@ -1,0 +1,45 @@
+.auth-page {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('assets/img/home-page-background.jpg');
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.auth-form {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+}
+
+.row {
+    width: 100%;
+    margin: 0;
+}
+
+span{
+    text-align: center;
+}
+
+.side-bar div {
+    border: 1px solid blue;
+}
+
+.side-bar input {
+    width: 20%;
+}
+
+.element-center {
+    margin: auto;
+    width: 30%;
+    padding: 10px;
+}
+
+h3 span {
+    font-weight: bold;
+    color: white;
+}
+
+h3 {
+    text-align: center;
+}

@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { Routes, RouterModule} from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
@@ -13,6 +12,7 @@ import { ContentSectionWithImgComponent } from './profile-page/main-content/cont
 import { AppRoutingModule } from "app/app-routing.module";
 import { SharedModule } from "app/shared/shared.module";
 import { NavigationHeaderComponent } from "app/navigation-header/navigation-header.component";
+import { AuthPageComponent } from './auth-page/auth-page.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +22,8 @@ import { NavigationHeaderComponent } from "app/navigation-header/navigation-head
     ProfilePageComponent,
     MainContentComponent,
     ContentSectionWithImgComponent,
-    NavigationHeaderComponent
+    NavigationHeaderComponent,
+    AuthPageComponent
   ],
   imports: [
     BrowserModule,

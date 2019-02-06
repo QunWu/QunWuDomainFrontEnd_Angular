@@ -1,47 +1,50 @@
-<div class="container">
-    <div class="row contact-form">
-        <!--image here-->
-        <div class="col-md-6">
-            
-        </div>
-        <div class="col-md-6">
-            <div>
-                <h3>Login to continue</h3>
-            </div>
-            <form [formGroup]="f"  (ngSubmit)="onSubmit()"> 
-                <div class="form-group">
-                    <input type="email" required class="form-control" formControlName="email" placeholder="your email">
-                    <span *ngIf="f.get('email').invalid&&f.get('email').touched">email is wrong</span> 
-                </div> 
-                 <div class="form-group">
-                    <input type="password" required class="form-control" formControlName="password" placeholder="your password">
-                    <span *ngIf="f.get('password').invalid&&f.get('password').touched">Subject is wrong</span> 
-                </div> 
-                <!--rember me & Forget password-->
-                 <div class="row">
-                    <div class="col-md-6">
-                        <input type="checkbox" formControlName="isRememberMeEnabled"/>
-                        <span>Remember me</span>
-                    </div>
-                    <div class="col-md-6">
-                        <a href="#">Forget Password?</a>
-                    </div>
-                 </div>
-                 <button type="submit" class="btn btn-default" [disabled]="f.invalid">Submit</button>
-                 <button type="button" class="btn btn-default">Sign up</button>
-            </form> 
+<div class="container auth-page">
 
-            <div class="medium-spacer-40"></div> 
+    <div class="large-spacer-100"></div> 
+    <div class="row element-center auth-form">
+        <div>
+            <h3><span>Login to continue</span></h3>
+        </div>
+
+        <form [formGroup]="signinForm"  (ngSubmit)="onSubmit()"> 
+            <div class="form-group">
+                <input type="email" required class="form-control" formControlName="email" placeholder="your email">
+                <span *ngIf="signinForm.get('email').invalid && signinForm.get('email').touched">email is wrong</span> 
+            </div> 
+
+            <div class="form-group">
+                <input type="password" required class="form-control" formControlName="password" placeholder="your password">
+                <span *ngIf="signinForm.get('password').invalid && signinForm.get('password').touched">Subject is wrong</span> 
+            </div> 
+
+            <!--rember me & Forget password-->
+            <div class="row">
+                <label><input type="checkbox" class="form-control" formControlName="isRememberMeEnabled"/><span>Remember me</span></label>
+            </div>
+            <div class="row">
+                <a href="#">Forget Password?</a>
+            </div>
 
             <div class="row">
-                <p class="text-center">Or sign up using:</p>
-                <div class="element-center">
-                    <!--social media icons here-->
+                <div class="col-md-6">
+                    <button type="submit" class="btn btn-default" [disabled]="signinForm.invalid">Submit</button>
+                </div>
+                <div class="col-md-6">
+                    <button type="button" class="btn btn-default">Sign up</button>
                 </div>
             </div>
-        </div>
+        </form> 
+
+        <div class="medium-spacer-40"></div> 
+
+        <div class="row">
+            <p class="text-center">Or sign up using:</p>
+            <div class="element-center">
+                <!--social media icons here-->
+                Social media icons here
+            </div>
+        </div>  
     </div> 
 </div>
-<div class="medium-spacer-40"></div> 
 <app-calender></app-calender>
 <app-page-root></app-page-root>

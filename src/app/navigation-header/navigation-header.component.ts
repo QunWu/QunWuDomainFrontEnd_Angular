@@ -16,7 +16,7 @@ export class NavigationHeaderComponent implements OnInit{
 
   ngOnInit(): void {
     this.halfScreenHeight = $(window).height()/2;
-    $(window).scroll(function (event) {
+    $(window).scroll(function () {
       if($(window).scrollTop()>=this.halfScreenHeight){
         $("#header").css({backgroundColor: 'black',opacity:0.8});
       }else

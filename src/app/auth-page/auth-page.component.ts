@@ -6,21 +6,20 @@ import { FormGroup, Validators, FormControl } from "@angular/forms";
   templateUrl: './auth-page.component.html',
   styleUrls: ['./auth-page.component.css']
 })
-export class ContactPageComponent implements OnInit {
-  f: FormGroup;
-
+export class AuthPageComponent implements OnInit {
+  signinForm: FormGroup;
   constructor() { }
 
   ngOnInit() {
-    this.f = new FormGroup({
-      'content' : new FormControl(null, [Validators.required]),
-      'subject' : new FormControl(null, [Validators.required]),
-      'email' : new FormControl(null, [Validators.required, Validators.email])
+    this.signinForm = new FormGroup({
+      'password' : new FormControl(null, [Validators.required]),
+      'email' : new FormControl(null, [Validators.required, Validators.email]),
+      'isRememberMeEnabled': new FormControl()
     });
   }
 
   onSubmit(){
-    console.log(this.f);
+    console.log(this.signinForm);
   }
 
 }
