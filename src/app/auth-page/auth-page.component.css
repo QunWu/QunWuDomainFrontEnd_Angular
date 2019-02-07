@@ -3,11 +3,15 @@
     height: 100vh;
     background-image: url('assets/img/home-page-background.jpg');
     background-repeat:no-repeat;
-    background-position:center;
+    background-size: cover;
+}
+
+.large-spacer {
+    height: 25%;
 }
 
 .auth-form {
-    background-color: rgb(0,0,0); /* Fallback color */
+    margin-top: 100px;
     background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
     color: white;
 }
@@ -30,9 +34,13 @@ span{
 }
 
 .element-center {
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.small-panel {
     width: 30%;
-    padding: 10px;
+    padding: 10px;   
 }
 
 h3 span {
