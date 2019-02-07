@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
@@ -29,6 +30,7 @@ import { AuthPageComponent } from './auth-page/auth-page.component';
     BrowserModule,
     FormsModule,
     HttpModule,
+    HttpClientModule,
     ReactiveFormsModule,
     AppRoutingModule,
     SharedModule

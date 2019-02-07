@@ -8,14 +8,17 @@ import { FormGroup, Validators, FormControl } from "@angular/forms";
 })
 export class AuthPageComponent implements OnInit {
   signinForm: FormGroup;
+  isRemberMeEnabled: false;
   constructor() { }
 
   ngOnInit() {
     this.signinForm = new FormGroup({
       'password' : new FormControl(null, [Validators.required]),
       'email' : new FormControl(null, [Validators.required, Validators.email]),
-      'isRememberMeEnabled': new FormControl()
+      'isRememberMeEnabled': new FormControl(null, [])
     });
+
+    this.signinForm.patchValue({isRememberMeEnabled: false});
   }
 
   onSubmit(){

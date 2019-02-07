@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs/Subject';
 import { Http } from '@angular/http';
 import { PostPreview } from "app/post-page/entity/PostPreview";
 import { ListGroup, ListEntity } from "app/entity/ListGroup";
