@@ -14,6 +14,7 @@ import { AppRoutingModule } from "app/app-routing.module";
 import { SharedModule } from "app/shared/shared.module";
 import { NavigationHeaderComponent } from "app/navigation-header/navigation-header.component";
 import { AuthPageComponent } from './auth-page/auth-page.component';
+import { CookieService } from 'ngx-cookie-service';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,7 @@ import { AuthPageComponent } from './auth-page/auth-page.component';
     AppRoutingModule,
     SharedModule
   ],
-  providers: [],
+  providers: [CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

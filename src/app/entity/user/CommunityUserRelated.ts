@@ -8,23 +8,28 @@ export class CommunityUser {
 }
 
 export class CommunityUserLoginInfo {
-    email: String;
-    encoded_pwd: String;
+    email: string;
+    encoded_pwd: string;
 }
 
 export class CommunityUserSession{
     session_id: number;
-    email: String;
-    device_id: String;
-    token: String;
+    email: string;
+    device_id: string;
+    token: string;
     creation_date: Date;
     expire_seconds: number;
-    status: String;
+    status: string;
 }
 
 export class CommunityUserLoginHistory {
     his_id: number;
-    email: String; 
+    email: string; 
     creation_date: Date;
-    action_type : String;
+    action_type : string;
+}
+
+export class CommunityUserAndSessionInfo {
+    userInfo: CommunityUser;
+    userSession: CommunityUserSession;
 }
